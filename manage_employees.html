@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Mitarbeiterverwaltung</h2>
+    <a href="{{ url_for('add_edit_employee') }}" class="btn btn-primary mb-3">Neuen Mitarbeiter hinzufügen</a>
+    {% if employees %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Max Wochenstunden</th>
+                    <th>Min Wochenstunden</th>
+                    <th>Aktionen</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for name, details in employees.items() %}
+                    <tr>
+                        <td>{{ name }}</td>
+                        <td>{{ details.max_weekly_hours }}</td>
+                        <td>{{ details.min_weekly_hours }}</td>
+                        <td>
+                            <a href="{{ url_for('add_edit_employee', name=name) }}" class="btn btn-sm btn-warning">Bearbeiten</a>
+                            <a href="{{ url_for('delete_employee', name=name) }}" class="btn btn-sm btn-danger" onclick="return confirm('Sind Sie sicher, dass Sie diesen Mitarbeiter löschen möchten?');">Löschen</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>Keine Mitarbeiterdaten vorhanden.</p>
+    {% endif %}
+{% endblock %}
