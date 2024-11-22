@@ -1,0 +1,137 @@
+{
+    "Aaron": {
+        "max_weekly_hours": 40,
+        "min_weekly_hours": 32,
+        "availability": {
+            "Monday": ["Frühschicht", "Spätschicht"],
+            "Tuesday": ["Frühschicht", "Spätschicht"],
+            "Wednesday": ["Frühschicht", "Spätschicht"],
+            "Thursday": ["Frühschicht", "Spätschicht"],
+            "Friday": ["Frühschicht", "Spätschicht"],
+            "Saturday": ["Frühschicht", "Spätschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Olek": {
+        "max_weekly_hours": 40,
+        "min_weekly_hours": 32,
+        "availability": {
+            "Monday": ["Frühschicht", "Spätschicht"],
+            "Tuesday": ["Frühschicht"],
+            "Wednesday": ["Spätschicht"],
+            "Thursday": ["Frühschicht", "Spätschicht"],
+            "Friday": ["Frühschicht", "Spätschicht"],
+            "Saturday": ["Frühschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Lily": {
+        "max_weekly_hours": 40,
+        "min_weekly_hours": 32,
+        "availability": {
+            "Monday": ["Spätschicht"],
+            "Tuesday": ["Frühschicht", "Spätschicht"],
+            "Wednesday": ["Frühschicht"],
+            "Thursday": ["Frühschicht", "Spätschicht"],
+            "Friday": ["Frühschicht"],
+            "Saturday": ["Spätschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Dzafer": {
+        "max_weekly_hours": 35,
+        "min_weekly_hours": 28,
+        "availability": {
+            "Monday": ["Frühschicht", "Spätschicht"],
+            "Tuesday": ["Frühschicht"],
+            "Wednesday": ["Frühschicht", "Spätschicht"],
+            "Thursday": ["Spätschicht"],
+            "Friday": ["Frühschicht", "Spätschicht"],
+            "Saturday": ["Frühschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Aylin": {
+        "max_weekly_hours": 35,
+        "min_weekly_hours": 28,
+        "availability": {
+            "Monday": ["Frühschicht"],
+            "Tuesday": ["Spätschicht"],
+            "Wednesday": ["Frühschicht", "Spätschicht"],
+            "Thursday": ["Frühschicht"],
+            "Friday": ["Spätschicht"],
+            "Saturday": ["Frühschicht", "Spätschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Titus": {
+        "max_weekly_hours": 30,
+        "min_weekly_hours": 24,
+        "availability": {
+            "Monday": ["Frühschicht", "Spätschicht"],
+            "Tuesday": ["Frühschicht", "Spätschicht"],
+            "Wednesday": ["Spätschicht"],
+            "Thursday": ["Frühschicht", "Spätschicht"],
+            "Friday": ["Frühschicht"],
+            "Saturday": ["Spätschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Thalia": {
+        "max_weekly_hours": 20,
+        "min_weekly_hours": 16,
+        "availability": {
+            "Monday": ["Frühschicht"],
+            "Tuesday": ["Spätschicht"],
+            "Wednesday": ["Frühschicht"],
+            "Thursday": ["Spätschicht"],
+            "Friday": ["Frühschicht"],
+            "Saturday": ["Spätschicht"],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Alexander": {
+        "max_weekly_hours": 8,
+        "min_weekly_hours": 6,
+        "availability": {
+            "Monday": [],
+            "Tuesday": [],
+            "Wednesday": ["Spätschicht"],
+            "Thursday": ["Spätschicht"],
+            "Friday": [],
+            "Saturday": ["Frühschicht", "Spätschicht"],
+            "Sunday": ["Frühschicht"]
+        },
+        "restrictions": {},
+        "preferences": {}
+    },
+    "Kevin": {
+        "max_weekly_hours": 6,
+        "min_weekly_hours": 4,
+        "availability": {
+            "Monday": ["Frühschicht"],
+            "Tuesday": [],
+            "Wednesday": ["Frühschicht"],
+            "Thursday": [],
+            "Friday": ["Frühschicht"],
+            "Saturday": [],
+            "Sunday": []
+        },
+        "restrictions": {},
+        "preferences": {}
+    }
+}
