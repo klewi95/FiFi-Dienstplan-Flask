@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Dienstplan anzeigen</h2>
+    {% if dienstplan %}
+        {% for name, shifts in dienstplan.items() %}
+            <h3>{{ name }}</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Wochentag</th>
+                        <th>Schicht</th>
+                        <th>Startzeit</th>
+                        <th>Endzeit</th>
+                        <th>Arbeitszeit (Std.)</th>
+                        <th>Pause (1 Std.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for shift in shifts %}
+                        <tr {% if shift['Schicht'] == 'Frühschicht' %}class="table-success"{% else %}class="table-info"{% endif %}>
+                            <td>{{ shift.Datum }}</td>
+                            <td>{{ shift.Wochentag }}</td>
+                            <td>{{ shift.Schicht }}</td>
+                            <td>{{ shift.Startzeit }}</td>
+                            <td>{{ shift.Endzeit }}</td>
+                            <td>{{ shift['Arbeitszeit (Std.)'] }}</td>
+                            <td>{{ shift['Pause (1 Std.)'] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+        <a href="{{ url_for('download_schedule') }}" class="btn btn-success">Dienstplan als CSV herunterladen</a>
+    {% else %}
+        <p>Kein Dienstplan gefunden.</p>
+    {% endif %}
+{% endblock %}
